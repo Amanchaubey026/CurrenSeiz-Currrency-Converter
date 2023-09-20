@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CurrenSeiz</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">CurrenSeiz</div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Choose Currency to convert</h1>
+      <form action="/" method="get">
+        <label for="currency"> Choose a currency: </label>
+        <select name="currency">
+          <option value="INR">Rupees</option>
+          <option value="USD">Dollar</option>
+          <option value="EUR">Euro</option>
+        </select>
+        <label for="quantity"> Choose the quantity: </label>
+        <input type="number" name="quantity" min="1" max="100000000" />
+        <button class="btn" type="submit">Submit</button>
+      </form>
+      <div class="output">
+          <caption>
+            <h3>Converted Currency Table :</h3>
+          </caption>
+        <table>
+          <thead>
+            <tr>
+              <th>Currency</th>
+              <th>Currency Code</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>            
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <footer>copyright &copy; All Rights reserved</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
